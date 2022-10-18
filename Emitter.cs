@@ -14,7 +14,8 @@ namespace KursovayaSharp
         public float GravitationY = 1;
         public int MousePositionX;
         public int MousePositionY;
-
+        public List<IImpactPoint> impactPoints = new List<IImpactPoint>();
+        public List<ParticleColorful> particles = new List<ParticleColorful>();
         public int X; // координата X центра эмиттера, будем ее использовать вместо MousePositionX
         public int Y; // соответствующая координата Y 
         public int Direction = 0; // вектор направления в градусах куда сыпет эмиттер
